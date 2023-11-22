@@ -151,7 +151,7 @@ class EarthgeckoSkylineDetector(AnomalyDetector):
         ts = inputData["timestamp"]
 
         # Convert the Timestamp object to a epoch timestamp
-        timestamp = ts.strftime('%s')
+        timestamp = ts.strftime('%S')
 
         inputRow = [int(timestamp), inputData["value"]]
         self.timeseries.append(inputRow)

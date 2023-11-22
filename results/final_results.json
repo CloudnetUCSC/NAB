@@ -1,8 +1,8 @@
 {
     "ARTime": {
-        "reward_low_FN_rate": 80.36228493638114,
-        "reward_low_FP_rate": 65.15400017974811,
-        "standard": 74.85377223215792
+        "reward_low_FN_rate": 98.41738935923935,
+        "reward_low_FP_rate": 97.1189187696385,
+        "standard": 97.70906025476276
     },
     "contextOSE": {
         "reward_low_FN_rate": 73.18167250416667,
@@ -15,19 +15,19 @@
         "standard": 58.20022252594827
     },
     "expose": {
-        "reward_low_FN_rate": 26.920946783333335,
-        "reward_low_FP_rate": 3.1909311068965485,
-        "standard": 16.43666922426724
+        "reward_low_FN_rate": 99.5698517771962,
+        "reward_low_FP_rate": 98.30801148168298,
+        "standard": 99.14699420223656
     },
     "htmjava": {
-        "reward_low_FN_rate": 70.42407766520115,
-        "reward_low_FP_rate": 53.25694971610345,
-        "standard": 65.54990960125
+        "reward_low_FN_rate": 69.91262233844512,
+        "reward_low_FP_rate": 57.97845153228002,
+        "standard": 65.34126417207631
     },
     "knncad": {
-        "reward_low_FN_rate": 64.81232086001505,
-        "reward_low_FP_rate": 43.40851703291233,
-        "standard": 57.99434335898808
+        "reward_low_FN_rate": 99.52163154543273,
+        "reward_low_FP_rate": 98.95815069179032,
+        "standard": 99.05137103077338
     },
     "null": {
         "reward_low_FN_rate": 0.0,
@@ -35,9 +35,9 @@
         "standard": 0.0
     },
     "numenta": {
-        "reward_low_FN_rate": 74.3202443095115,
-        "reward_low_FP_rate": 63.11684160219828,
-        "standard": 70.10105611943965
+        "reward_low_FN_rate": 98.46589747078089,
+        "reward_low_FP_rate": 97.30833316032256,
+        "standard": 97.8052543064638
     },
     "numentaTM": {
         "reward_low_FN_rate": 69.18506822906035,
