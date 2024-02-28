@@ -65,7 +65,7 @@ profiles and/or detectors.
     self.profilesPath = profilesPath
     self.pool = multiprocessing.Pool(numCPUs)
 
-    self.probationaryPercent = 0.15
+    self.probationaryPercent = 0.3
     self.windowSize = 0.10
 
     self.corpus = None

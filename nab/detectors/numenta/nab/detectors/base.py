@@ -40,8 +40,9 @@ class AnomalyDetector(object):
                 probationaryPercent):
 
     self.dataSet = dataSet
-    self.probationaryPeriod = getProbationPeriod(
-      probationaryPercent, dataSet.data.shape[0])
+    # self.probationaryPeriod = getProbationPeriod(
+    #   probationaryPercent, dataSet.data.shape[0])
+    self.probationaryPeriod = 150
 
     self.inputMin = self.dataSet.data["value"].min()
     self.inputMax = self.dataSet.data["value"].max()
