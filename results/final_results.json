@@ -1,77 +1,27 @@
 {
     "ARTime": {
-        "reward_low_FN_rate": 98.41738935923935,
-        "reward_low_FP_rate": 97.1189187696385,
-        "standard": 97.70906025476276
-    },
-    "contextOSE": {
-        "reward_low_FN_rate": 73.18167250416667,
-        "reward_low_FP_rate": 66.97713919047413,
-        "standard": 69.89956896844828
-    },
-    "earthgeckoSkyline": {
-        "reward_low_FN_rate": 63.80014835063793,
-        "reward_low_FP_rate": 46.19530112566379,
-        "standard": 58.20022252594827
+        "reward_low_FN_rate": 83.97592000784859,
+        "reward_low_FP_rate": 69.13882774678346,
+        "standard": 80.4554781913911
     },
     "expose": {
-        "reward_low_FN_rate": 99.5698517771962,
-        "reward_low_FP_rate": 98.30801148168298,
-        "standard": 99.14699420223656
-    },
-    "htmjava": {
-        "reward_low_FN_rate": 69.91262233844512,
-        "reward_low_FP_rate": 57.97845153228002,
-        "standard": 65.34126417207631
+        "reward_low_FN_rate": 67.84360198470127,
+        "reward_low_FP_rate": 38.710121407245886,
+        "standard": 63.35595474057923
     },
     "knncad": {
-        "reward_low_FN_rate": 99.52163154543273,
-        "reward_low_FP_rate": 98.95815069179032,
-        "standard": 99.05137103077338
-    },
-    "null": {
-        "reward_low_FN_rate": 0.0,
-        "reward_low_FP_rate": 0.0,
-        "standard": 0.0
+        "reward_low_FN_rate": 35.78031225038606,
+        "reward_low_FP_rate": -41.95355854308981,
+        "standard": 21.671441456910266
     },
     "numenta": {
-        "reward_low_FN_rate": 98.46589747078089,
-        "reward_low_FP_rate": 97.30833316032256,
-        "standard": 97.8052543064638
+        "reward_low_FN_rate": 79.39750164399516,
+        "reward_low_FP_rate": 71.81158312480267,
+        "standard": 74.8711951869941
     },
-    "numentaTM": {
-        "reward_low_FN_rate": 69.18506822906035,
-        "reward_low_FP_rate": 56.665308225043105,
-        "standard": 64.55346441254311
-    },
-    "random": {
-        "reward_low_FN_rate": 25.876351314080456,
-        "reward_low_FP_rate": 5.763682319827586,
-        "standard": 16.831768350517237
-    },
-    "randomCutForest": {
-        "reward_low_FN_rate": 59.74876476310345,
-        "reward_low_FP_rate": 38.360772142413786,
-        "standard": 51.717054557073276
-    },
-    "relativeEntropy": {
-        "reward_low_FN_rate": 58.84229239324713,
-        "reward_low_FP_rate": 47.598351759844824,
-        "standard": 54.64274893469828
-    },
-    "skyline": {
-        "reward_low_FN_rate": 44.4810173429885,
-        "reward_low_FP_rate": 27.08121005969828,
-        "standard": 35.687043255862065
-    },
-    "twitterADVec": {
-        "reward_low_FN_rate": 53.50107495100574,
-        "reward_low_FP_rate": 33.610051641206894,
-        "standard": 47.06195725408189
-    },
-    "windowedGaussian": {
-        "reward_low_FN_rate": 47.4100271583046,
-        "reward_low_FP_rate": 20.86798582474138,
-        "standard": 39.649523496077585
+    "vmft-lad": {
+        "reward_low_FN_rate": 99.42924026924055,
+        "reward_low_FP_rate": 98.82467941930095,
+        "standard": 99.30384608596765
     }
 }
