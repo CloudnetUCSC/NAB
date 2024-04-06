@@ -20,6 +20,7 @@
 
 import multiprocessing
 import os
+from os.path import dirname
 import pandas
 try:
   import simplejson as json
@@ -97,6 +98,10 @@ profiles and/or detectors.
     count = 0
     args = []
     for detectorName, detectorConstructor in detectors.iteritems():
+      
+      f = open("%s/detectors/avg_times.txt"%(dirname(__file__)), "w")
+      f.write("%s\n\n"%(detectorName))
+      f.close()
       for relativePath, dataSet in self.corpus.dataFiles.iteritems():
 
         if self.corpusLabel.labels.has_key(relativePath):

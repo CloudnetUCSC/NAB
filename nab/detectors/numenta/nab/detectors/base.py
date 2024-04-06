@@ -22,6 +22,8 @@ import abc
 import os
 import pandas
 import sys
+from timeit import default_timer as timer
+from os.path import dirname
 
 from datetime import datetime
 from nab.util import createPath, getProbationPeriod
@@ -99,6 +101,10 @@ class AnomalyDetector(object):
     Main function that is called to collect anomaly scores for a given file.
     """
 
+    execution_time_min = float("inf")
+    execution_time_max = 0
+    execution_time_avg = None
+
     headers = self.getHeader()
 
     rows = []
@@ -106,7 +112,13 @@ class AnomalyDetector(object):
 
       inputData = row.to_dict()
 
+      start = timer()
       detectorValues = self.handleRecord(inputData)
+      end = timer()
+      execution_time = end - start
+      execution_time_min = min(execution_time_min, execution_time)
+      execution_time_max = max(execution_time_max, execution_time)
+      execution_time_avg = execution_time if execution_time_avg is None else (execution_time_avg + execution_time) / 2
 
       outputRow = list(row) + list(detectorValues)
 
@@ -116,6 +128,14 @@ class AnomalyDetector(object):
       if (i % 1000) == 0:
         print ".",
         sys.stdout.flush()
+      
+    print("Execution time (min): %f ms"%(execution_time_min*1000))
+    print("Execution time (max): %f ms"%(execution_time_max*1000))
+    print("Execution time (avg): %f ms"%(execution_time_avg*1000))
+
+    f = open("%s/avg_times.txt"%(dirname(__file__)), "a")
+    f.write("%f\n"%(execution_time_avg*1000))
+    f.close()
 
     ans = pandas.DataFrame(rows, columns=headers)
     return ans

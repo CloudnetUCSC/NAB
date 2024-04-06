@@ -11,7 +11,7 @@ services:
       [
         "/bin/sh",
         "-c",
-        "python run.py -d ARTime  --detect --windowsFile labels/combined_windows_new.json --skipConfirmation",
+        "python run.py -d ARTime --detect --windowsFile labels/combined_windows_eval.json --numCPUs 1 --skipConfirmation",
       ]
     volumes:
       - ..:/usr/src/nab
