@@ -1,27 +1,27 @@
 {
     "ARTime": {
-        "reward_low_FN_rate": 54.195707382690934,
-        "reward_low_FP_rate": 42.19588258369787,
-        "standard": 56.22488879682832
+        "reward_low_FN_rate": 46.550138592637076,
+        "reward_low_FP_rate": 26.99497205812225,
+        "standard": 48.53156553889604
     },
     "expose": {
-        "reward_low_FN_rate": 55.46438000649689,
-        "reward_low_FP_rate": 17.533347703988355,
-        "standard": 50.652043866025814
+        "reward_low_FN_rate": 56.16762724679023,
+        "reward_low_FP_rate": 18.42437938986244,
+        "standard": 52.5024796823166
     },
     "knncad": {
-        "reward_low_FN_rate": -11.790120685753573,
-        "reward_low_FP_rate": -56.06060606060606,
-        "standard": -13.622798715199414
+        "reward_low_FN_rate": 0.20981559240962655,
+        "reward_low_FP_rate": -54.94210726015209,
+        "standard": 1.4664293252137743
     },
     "numenta": {
-        "reward_low_FN_rate": 37.10284704679605,
-        "reward_low_FP_rate": 45.11218465556188,
-        "standard": 47.71635132222847
+        "reward_low_FN_rate": 3.130665810782664,
+        "reward_low_FP_rate": 16.221004242106897,
+        "standard": 21.515462712106054
     },
     "vmft-lad": {
-        "reward_low_FN_rate": 92.51134789153777,
-        "reward_low_FP_rate": 92.65967432225442,
-        "standard": 93.13884098892106
+        "reward_low_FN_rate": 89.6718636300031,
+        "reward_low_FP_rate": 90.35621756457681,
+        "standard": 90.74188829628415
     }
 }
