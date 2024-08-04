@@ -13,6 +13,20 @@
             "threshold": 0.259773
         }
     },
+    "DeepLog": {
+        "reward_low_FN_rate": {
+            "score": 353.0609337186005,
+            "threshold": 1.0
+        },
+        "reward_low_FP_rate": {
+            "score": 168.04093371859383,
+            "threshold": 1.0
+        },
+        "standard": {
+            "score": 353.0609337186005,
+            "threshold": 1.0
+        }
+    },
     "bayesChangePt": {
         "reward_low_FN_rate": {
             "score": -119.7471580442638,

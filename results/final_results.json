@@ -4,6 +4,11 @@
         "reward_low_FP_rate": 26.99497205812225,
         "standard": 48.53156553889604
     },
+    "DeepLog": {
+        "reward_low_FN_rate": 75.78509504127034,
+        "reward_low_FP_rate": 43.298922822958346,
+        "standard": 71.50319111564131
+    },
     "expose": {
         "reward_low_FN_rate": 56.16762724679023,
         "reward_low_FP_rate": 18.42437938986244,
