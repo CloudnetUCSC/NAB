@@ -4,6 +4,36 @@
         "reward_low_FP_rate": 56.923328543404615,
         "standard": 73.97989290749501
     },
+    "DeepLog": {
+        "reward_low_FN_rate": 76.05508742180984,
+        "reward_low_FP_rate": 43.750804100056705,
+        "standard": 71.82092605127622
+    },
+    "LLM-BartLarge": {
+        "reward_low_FN_rate": -954.4008277181299,
+        "reward_low_FP_rate": -2381.6363399365764,
+        "standard": -1140.849754570726
+    },
+    "LLM-Cyrax7B": {
+        "reward_low_FN_rate": -439.1049592307795,
+        "reward_low_FP_rate": -1168.8293117776836,
+        "standard": -534.4344947045149
+    },
+    "LLM-EmertonMonarch7B": {
+        "reward_low_FN_rate": -646.2339515983402,
+        "reward_low_FP_rate": -1656.3454430395075,
+        "standard": -778.1899552346321
+    },
+    "LLM-Falcon7B": {
+        "reward_low_FN_rate": -381.5664525436107,
+        "reward_low_FP_rate": -1032.5172276885169,
+        "standard": -466.7214959812004
+    },
+    "LLM-GPT3": {
+        "reward_low_FN_rate": 99.4493415043282,
+        "reward_low_FP_rate": 98.83215189228866,
+        "standard": 99.3519689654594
+    },
     "expose": {
         "reward_low_FN_rate": 67.32915727691395,
         "reward_low_FP_rate": 37.065204028438714,
