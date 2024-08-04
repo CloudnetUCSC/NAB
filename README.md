@@ -15,10 +15,11 @@ The NAB scores for all evaluated models on our VM failure log dataset, under 2 d
 | Detector                                                                   | Standard Profile | Reward Low FP | Reward Low FN |
 | -------------------------------------------------------------------------- | ---------------- | ------------- | ------------- |
 | [VMFT-LAD](#)                                                              | 98.16            | 97.77         | 98.44         |
-| [ARTime](https://github.com/markNZed/ARTimeNAB.jl)                         | 66.63            | 61.04         | 71.64         |
-| [Numenta HTM](https://github.com/numenta/nupic)                            | 32.13            | -22.05        | 42.32         |
-| [KNN CAD](https://github.com/numenta/NAB/tree/master/nab/detectors/knncad) | 42.32            | 37.07         | 67.33         |
-| [EXPoSE](https://arxiv.org/abs/1601.06602v3)                               | 73.98            | 56.92         | 77.89         |
+| [Numenta HTM](https://github.com/numenta/nupic)                            | 66.63            | 61.04         | 71.64         |
+| [KNN CAD](https://github.com/numenta/NAB/tree/master/nab/detectors/knncad) | 32.13            | -22.05        | 42.32         |
+| [EXPoSE](https://arxiv.org/abs/1601.06602v3)                               | 42.32            | 37.07         | 67.33         |
+| [ARTime](https://github.com/markNZed/ARTimeNAB.jl)                         | 73.98            | 56.92         | 77.89         |
+| [DeepLog](https://users.cs.utah.edu/~lifeifei/papers/deeplog.pdf)          | 71.82            | 43.75         | 76.06         |
 
 ### Criteria-2: strict
 
@@ -27,10 +28,11 @@ The NAB scores for all evaluated models on our VM failure log dataset, under 2 d
 | Detector                                                                   | Standard Profile | Reward Low FP | Reward Low FN |
 | -------------------------------------------------------------------------- | ---------------- | ------------- | ------------- |
 | [VMFT-LAD](#)                                                              | 90.74            | 90.36         | 89.67         |
-| [ARTime](https://github.com/markNZed/ARTimeNAB.jl)                         | 21.52            | 16.22         | 3.13          |
-| [Numenta HTM](https://github.com/numenta/nupic)                            | 1.47             | -54.94        | 0.21          |
-| [KNN CAD](https://github.com/numenta/NAB/tree/master/nab/detectors/knncad) | 52.50            | 18.42         | 56.17         |
-| [EXPoSE](https://arxiv.org/abs/1601.06602v3)                               | 48.53            | 26.99         | 46.55         |
+| [Numenta HTM](https://github.com/numenta/nupic)                            | 21.52            | 16.22         | 3.13          |
+| [KNN CAD](https://github.com/numenta/NAB/tree/master/nab/detectors/knncad) | 1.47             | -54.94        | 0.21          |
+| [EXPoSE](https://arxiv.org/abs/1601.06602v3)                               | 52.50            | 18.42         | 56.17         |
+| [ARTime](https://github.com/markNZed/ARTimeNAB.jl)                         | 48.53            | 26.99         | 46.55         |
+| [DeepLog](https://users.cs.utah.edu/~lifeifei/papers/deeplog.pdf)          | 71.50            | 43.30         | 75.79         |
 
 ## Dataset
 
