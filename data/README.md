@@ -1,68 +1,73 @@
-NAB Data Corpus
----
+# VM Failure Simulation Dataset
 
-Data are ordered, timestamped, single-valued metrics. All data files contain anomalies, unless otherwise noted.
+The evaluation dataset contains a corpus of 695 time series data files simulating different VM failure scenarios,
 
+| Dataset name | Description                                               | File count |
+| ------------ | --------------------------------------------------------- | ---------- |
+| Benign       | Normal state dataset that does not contain any VM failure | 152        |
+| HDD          | Simulated short-term HDD failures using SCSI_debug module | 134        |
+| Buffer I/O   | Simulated buffer I/O error                                | 144        |
+| CPU          | CPU over-allocation failure dataset                       | 128        |
+| OOM          | Out of Memory failure dataset                             | 137        |
 
-### Real data
-- realAWSCloudwatch/
+- The _master_ branch contains the data labels for criteria-1: relaxed.
+- For the data and labels of criteria-2: strict, switch to _eval-failure_ branch.
 
-	AWS server metrics as collected by the AmazonCloudwatch service. Example metrics include CPU Utilization, Network Bytes In, and Disk Read Bytes.
+Each data file has 3 distinct regions:
 
-- realAdExchange/
-	
-	Online advertisement clicking rates, where the metrics are cost-per-click (CPC) and cost per thousand impressions (CPM). One of the files is normal, without anomalies.
-	
-- realKnownCause/
+- Benign region - normal state before fault injection
+- Pre-failure region - after fault injection
+- Post-failure region - after failure point
 
-	This is data for which we know the anomaly causes; no hand labeling.
-	
-	- ambient_temperature_system_failure.csv: The ambient temperature in an office
-	setting.
-	- cpu_utilization_asg_misconfiguration.csv: From Amazon Web Services (AWS)
-	monitoring CPU usage – i.e. average CPU usage across a given cluster. When
-	usage is high, AWS spins up a new machine, and uses fewer machines when usage
-	is low.
-	- ec2_request_latency_system_failure.csv: CPU usage data from a server in
-	Amazon's East Coast datacenter. The dataset ends with complete system failure
-	resulting from a documented failure of AWS API servers. There's an interesting
-	story behind this data in the [Numenta
-	blog](http://numenta.com/blog/anomaly-of-the-week.html).
-	- machine_temperature_system_failure.csv: Temperature sensor data of an
-	internal component of a large, industrial mahcine. The first anomaly is a
-	planned shutdown of the machine. The second anomaly is difficult to detect and
-	directly led to the third anomaly, a catastrophic failure of the machine.
-	- nyc_taxi.csv: Number of NYC taxi passengers, where the five anomalies occur
-	during the NYC marathon, Thanksgiving, Christmas, New Years day, and a snow
-	storm. The raw data is from the [NYC Taxi and Limousine Commission](http://www.nyc.gov/html/tlc/html/about/trip_record_data.shtml).
-	The data file included here consists of aggregating the total number of
-	taxi passengers into 30 minute buckets.
-	- rogue_agent_key_hold.csv: Timing the key holds for several users of a
-	computer, where the anomalies represent a change in the user.
-	- rogue_agent_key_updown.csv: Timing the key strokes for several users of a
-	computer, where the anomalies represent a change in the user.
-
-- realTraffic/
-
-	Real time traffic data from the Twin Cities Metro area in Minnesota, collected
-	by the
-	[Minnesota Department of Transportation](http://www.dot.state.mn.us/tmc/trafficinfo/developers.html).
-	Included metrics include occupancy, speed, and travel time from specific
-	sensors.
-
-- realTweets/
-
-	A collection of Twitter mentions of large publicly-traded companies
-	such as Google and IBM. The metric value represents the number of mentions
-	for a given ticker symbol every 5 minutes.
-
-
-### Artificial data
-
-- artificialNoAnomaly/
-
-	Artificially-generated data without any anomalies.
-
-- artificialWithAnomaly/
-
-	Artificially-generated data with varying types of anomalies.
+<table ><thead>
+  <tr>
+    <th rowspan="2">Dataset</th>
+    <th  colspan="4" style="text-align: center">Number of Log lines</th>
+  </tr>
+  <tr>
+    <th >Benign</th>
+    <th >Pre-failure</th>
+    <th >Post-failure</th>
+    <th >Total</th>
+  </tr></thead>
+<tbody>
+  <tr>
+    <td >HDD</td>
+    <td >79345</td>
+    <td >74574</td>
+    <td >10901</td>
+    <td >164820</td>
+  </tr>
+  <tr>
+    <td >OOM</td>
+    <td >96833</td>
+    <td >7365</td>
+    <td >26196</td>
+    <td >130394</td>
+  </tr>
+  <tr>
+    <td >Buffer-IO</td>
+    <td >369499</td>
+    <td >97918</td>
+    <td >16274</td>
+    <td >483691</td>
+  </tr>
+  <tr>
+    <td >CPU</td>
+    <td >58192</td>
+    <td >50187</td>
+    <td >13429</td>
+    <td >121808</td>
+  </tr>
+  <tr>
+    <td >Benign</td>
+    <td >113313</td>
+    <td >-</td>
+    <td >-</td>
+    <td >113313</td>
+  </tr>
+  <tr>
+    <td  colspan="4">Total data points</td>
+    <td >1014026</td>
+  </tr>
+</tbody></table>
