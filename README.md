@@ -4,6 +4,24 @@ This repository contains the modified [Numenta Anomaly Benchmark (NAB) v1.1](htt
 our dataset and labels used to evaluate our model, VMFT-LAD along with 4 other models implemented
 in the original NAB repo.
 
+The source repository of VMFT-LAD: <https://github.com/CloudnetUCSC/VMFT-LAD>
+
+### Citation
+
+```bib
+@ARTICLE {
+  pratheeks2024vmft-lad,
+  author={Senevirathne, Pratheek and Cooray, Samindu and Dinal Herath, Jerome and Fernando, Dinuni},
+  journal={IEEE Access},
+  title={Virtual Machine Proactive Fault Tolerance Using Log-Based Anomaly Detection},
+  year={2024},
+  volume={12},
+  number={},
+  pages={178951-178970},
+  doi={10.1109/ACCESS.2024.3506833}
+}
+```
+
 ## Scoreboard
 
 The NAB scores for all evaluated models on our VM failure log dataset, under 2 different evaluation criterion,
